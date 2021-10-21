@@ -1,0 +1,259 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    box-sizing: border-box;
+}
+hr{
+    width: 100%;
+}
+body{
+    background-color: #edf0f5;
+}
+.logo{
+    width: 67%;
+}
+#container{
+    width: 80%;
+    margin: 10% 10% 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.interface{
+    display: flex;
+    justify-content: center;
+}
+.left-side, .right-side{
+    flex:1;
+}
+.left-side{
+    flex: 1.2;
+}
+
+.logo{
+    margin-left: -30px;
+}
+.right-side{
+    width: 10rem;
+    height: 20rem;
+    margin: -5% 0% 0px 10%;
+    display: block;
+    justify-content: center;    
+}
+.right-side-top{
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    height: 21rem;
+}
+.right-side-top h5 a:hover{
+    text-decoration: underline;
+    font-weight: lighter;
+}
+
+.right-side input[type=text], 
+.right-side input[type="password"]{
+    border-radius: 8px;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-width: 1px;
+    font-size: 1rem;
+}
+.right-side a{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    margin-top: 0.5rem;
+    text-decoration: none;
+}
+.right-side-bottom a:hover{
+    text-decoration: underline;
+}
+.btn{
+    font-weight: bold;
+    border-radius: 7px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+.btn:hover{
+    filter: brightness(95%);
+    cursor: pointer;
+}
+.btn-login{
+    width: 100%;
+    background-color: #1877f2;
+    padding: 10px 0;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    font-size: 1.2rem;
+    border-style: none;
+}
+.btn-create_text{
+    background-color: #42b72a;
+    padding: 10px;
+    width: 60%;
+}
+.btn-create{
+    padding-top: 10px;
+    border-style: none;
+}
+
+.btn-signup{
+    background-color: #42b72a;
+    padding: 6px;
+    width: 50%;
+    margin-left: 25%;
+}
+.right-side-bottom ,.right-side-bottom a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    margin-top: 20px;
+    text-decoration: none;
+}
+.right-side-bottom a{
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+    color: #000;
+    font-size: 13px;
+}
+#error{
+    font-size: 12px;
+}
+#signup{
+    width: 25rem;
+    height: 30rem;
+    background: #fff;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 7px;
+    padding: 2rem;
+    margin: -22rem auto 5rem;
+    display: none;
+    filter: brightness(1);
+}
+.signup_head p {
+    margin-left: -5.6rem;
+    margin-top: 8px;
+    margin-bottom: -20px;
+    display: inline-flex;
+    float: left;
+}
+.signup_head h2 {
+    display: flex;
+    float: left;
+}
+.signup_head button {
+    float: right;
+    margin-left: 13rem;
+}
+.create_name{
+    display: flex;
+    justify-content: space-between;
+}
+#signup .form_area{
+    margin-top: 0.5rem;
+
+}
+#signup .form_area .create_name input{
+    width: 49.5%;
+}
+#signup .form_area input{
+    width: 100%;
+    padding: 9px;
+    margin-top: 0.5rem;
+    border-radius: 5px;
+}
+.DOB{
+    display: flex;
+    margin-top: 10px;
+}
+.DOBflex{
+    justify-content: space-between;
+}
+.DOB select{    
+    padding-right: 20px;
+    border-radius: 4px;
+    width: 6.8rem;
+    height: 2.2rem;
+    justify-content: center;
+}
+.gender{
+    margin-top: 10px;
+}
+.gender table tr td{
+    width: 6.5rem;
+    display:inline-flex;
+    align-items: center;
+    border: 1px solid black;
+    padding: 5px;
+}
+.term{
+    font-size: 11px;
+    text-align: left;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.active{
+    transform: translate(50%,   50%) scale(1);
+}
+
+.gender table tr td {
+    background: #fff;
+    margin-right: 5px;
+    margin-left: 1px;
+    border-radius: 5px;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+form p{
+    font-size: 15px;
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: -10px;
+}
+#close_signup{
+    background: none;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+#close_signup:hover{
+    background: #fff;
+    filter: brightness(90%);
+    cursor: pointer;
+    padding: 0px 2px;
+}
+
+@media(max-width: 880px) {
+    .interface{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .left-side,
+    .left-side h2{
+        margin-top: -1rem;
+        margin-bottom: 1rem;
+        margin-left: 1.5rem;
+        width: 30rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    .right-side{
+        width: 26rem;
+        /* margin-top: 10rem; */
+    }
+}
